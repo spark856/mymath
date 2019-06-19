@@ -13,6 +13,24 @@ $(document).ready(function(){
 	var sp;
 	
 	change();
+	$('input[type="range"]').rangeslider({
+		// polyfillの設定
+		//polyfill: true,
+	 
+		// CSS用クラス
+		rangeClass: 'rangeslider',
+		fillClass: 'rangeslider__fill',
+		handleClass: 'rangeslider__handle',
+	 
+		// 初期化時のコールバック関数
+		//onInit: function() {},
+	 
+		// スライド時のコールバック関数
+		//onSlide: function(position, value) {},
+	 
+		// スライド終了時のコールバック関数
+		//onSlideEnd: change() {}
+	});
 	document.addEventListener('touchmove', function(e) {e.preventDefault();}, {passive: false});
 	var elem = document.getElementsByClassName('range');
 　 	var rangeValue = function (elem, target) {
