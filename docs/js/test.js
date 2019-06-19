@@ -15,7 +15,7 @@ $(document).ready(function(){
 	change();
 	$('input[type="range"]').rangeslider({
 		// polyfillの設定
-		//polyfill: true,
+		polyfill: true,
 	 
 		// CSS用クラス
 		rangeClass: 'rangeslider',
@@ -26,7 +26,7 @@ $(document).ready(function(){
 		//onInit: function() {},
 	 
 		// スライド時のコールバック関数
-		//onSlide: function(position, value) {},
+		onSlide: function(position, value) {},
 	 
 		// スライド終了時のコールバック関数
 		//onSlideEnd: change() {}
