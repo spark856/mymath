@@ -22,7 +22,7 @@ $(document).ready(function(){
 			step: 1,
 			//scale: [3,10,20,30,40,50],
 			format: '%s',
-			width: 400,
+			width: 350,
 			showLabels: true,
 			onstatechange: function(){
 				a = Number($("#a").val());
@@ -48,7 +48,7 @@ $(document).ready(function(){
 			step: 1,
 			//scale: [3,10,20,30,40,50],
 			format: '%s',
-			width: 400,
+			width: 350,
 			//showLabels: true,
 			onstatechange: function(){
 				b = Number($("#b").val());
