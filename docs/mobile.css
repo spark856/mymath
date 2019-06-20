@@ -16,7 +16,7 @@ html, body{
 }
 .box{
 	position: absolute;
-	top: 78%;
+	top: 85%;
 	left: 0%;
 	width: 100%;
 	box-sizing: border-box;
@@ -61,7 +61,7 @@ input{
 }
 .disp{
 	position: absolute;
-	top: 90%;
+	top: 78%;
 	left: 0%;
 	width: 100%;
 	font-size: 15px;
