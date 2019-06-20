@@ -50,7 +50,7 @@ input{
 
 .message{
 	position: absolute;
-	top: 20%;
+	top: 23%;
 	left: 0%;
 	width: 100%;
 	border:2px red solid;
@@ -61,7 +61,7 @@ input{
 }
 .disp{
 	position: absolute;
-	top: 12%;
+	top: 15%;
 	left: 0%;
 	width: 100%;
 	font-size: 15px;
