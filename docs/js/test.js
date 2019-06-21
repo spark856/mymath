@@ -11,7 +11,6 @@ $(document).ready(function(){
 	var height_down;
 	var spnum = [3,5,11,17,41];
 	var sp;
-	var mflag=0;
 	var rangeValue;
 	
 	change();
@@ -84,15 +83,12 @@ $(document).ready(function(){
 		},".dotcover");
 	}
 	else{
+
 		$(".dotcover").on('touchstart', function() {
-			if(mflag===0){
-				$(this).find(".num").fadeIn();
-				mflag=1;
-			}
-			else{
+			$(this).find(".num").fadeIn();
+			setTimeout(function(){
 				$(this).find(".num").hide();
-				mflag=0;
-			}
+			},2000);
 		});
 	}
 	/*
