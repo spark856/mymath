@@ -11,7 +11,7 @@ $(document).ready(function(){
 	var height_down;
 	var spnum = [3,5,11,17,41];
 	var sp;
-	var mfag=0;
+	var mflag=0;
 	var rangeValue;
 	
 	change();
