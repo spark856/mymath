@@ -72,14 +72,24 @@ $(document).ready(function(){
 
 	
 
-	$(document).on({
-		"mouseenter" : function(){
+	if (window.ontouchstart === undefined){
+		$(document).on({
+			"mouseenter" : function(){
+				$(this).find(".num").fadeIn();
+			},
+			"mouseleave" : function(){
+				$(this).find(".num").hide();
+			}
+		},".dotcover");
+	}
+	else{
+		$(".dotcover").on('touchstart', function() {
 			$(this).find(".num").fadeIn();
-		},
-		"mouseleave" : function(){
+		});
+		$(".dotcover").on('touchend', function() {
 			$(this).find(".num").hide();
-		}
-	},".dotcover");
+		});
+	}
 	/*
 	$("#id_textBox2").focusout(function(){
 		change();
