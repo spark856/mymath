@@ -85,10 +85,10 @@ $(document).ready(function(){
 	else{
 
 		$(".dotcover").on('touchstart', function() {
-			$(this).find(".num").fadeIn();
+			var p = this;
+			$(p).find(".num").fadeIn();
 			setTimeout(function(){
-				$(".dotcover").find(".num").hide();
-				$(this).find(".num").hide();
+				$(p).find(".num").hide();
 			},2000);
 		});
 	}
