@@ -84,7 +84,7 @@ $(document).ready(function(){
 	}
 	else{
 
-		$(document).on('touched',".dotcover", function() {
+		$(".dotcover").on('touchstart', function() {
 			var p = this;
 			$(p).find(".num").fadeIn();
 			setTimeout(function(){
