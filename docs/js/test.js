@@ -84,10 +84,14 @@ $(document).ready(function(){
 	}
 	else{
 		$(".dotcover").on('touchstart', function() {
-			$(this).find(".num").fadeIn();
-		});
-		$(".dotcover").on('touchend', function() {
-			$(this).find(".num").hide();
+			if(mflag===0){
+				$(this).find(".num").fadeIn();
+				mflag=1;
+			}
+			else{
+				$(this).find(".num").hide();
+				mflag=0;
+			}
 		});
 	}
 	/*
