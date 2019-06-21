@@ -87,6 +87,7 @@ $(document).ready(function(){
 		$(".dotcover").on('touchstart', function() {
 			$(this).find(".num").fadeIn();
 			setTimeout(function(){
+				$(".dotcover").find(".num").hide();
 				$(this).find(".num").hide();
 			},2000);
 		});
